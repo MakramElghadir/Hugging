@@ -1,11 +1,14 @@
 from huggingface_hub import InferenceClient
-
-client = InferenceClient(api_key="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")
+import dotenv
+import os
+dotenv.load_dotenv()
+TOKEN = os.getenv("TOKEN")
+client = InferenceClient(api_key= TOKEN)
 
 messages = [
 	{
 		"role": "user",
-		"content": "What is the capital of Algeria?"
+		"content": "erase"
 	}
 ]
 
