@@ -5,7 +5,7 @@ client = InferenceClient(api_key="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")
 messages = [
 	{
 		"role": "user",
-		"content": "What is the capital of Algeeria?"
+		"content": "What is the capital of Algeria?"
 	}
 ]
 
